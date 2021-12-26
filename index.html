@@ -1,0 +1,432 @@
+# New-Year-New-Me-
+Use this website as a way to keep yourself productive and organized!
+https://new-year-new-me.sahaankita348.repl.co/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title> New Year, Better Me!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <script src="/script.js" defer>
+    var list = $('.to-do-list');
+
+
+
+var userText = $("input");
+var button = $('.submit-btn');
+
+button.on("click", userSubmit);
+
+function userSubmit(){
+  // code here!
+  var userText = $("input");
+  console.log(userText.val());
+  var notes = $('.notes');
+  notes.append(`<p>${userText.val()}</p>`);
+  userText.val("");
+}
+
+ 
+var newInput = $(".new-input");
+var newButton = $(".new-btn");
+
+newButton.on('click', newFunction);
+
+function newFunction(){
+  var newInput = $(".new-input");
+  var newSection = $(".new-section");
+  newSection.append(`
+  <div>
+    <p>${newInput.val()}</p>
+    <button class="delete-btn">Delete Task</button>
+  </div>`);
+  newInput.val("");
+}
+
+var newSection = $(".new-section");
+
+newSection.on("click", deleteFunction);
+
+function deleteFunction(){
+  if (event.target.className==="delete-btn"){
+    event.target.parentNode.remove();
+  }
+
+}
+
+
+
+
+
+
+
+
+    </script>
+  </head>  
+  <body>
+    
+    <section class="to-do-list">
+      <h1 class= "new">New Year, Better Me!</h1>
+    </section>
+<div class= "dell">
+      <div>
+    <section class="notes">
+      <h1>My Resolutions</h1>
+      <input type="text"></input>
+      <button class="submit-btn">Make It A Task!</button>
+    </section>
+</div>
+<div>
+  <section class="new-section">
+      <h1>Productivity Goals</h1>
+      <input type="text" class="new-input"></input>
+      <button class="new-btn">Make It A Task!</button>
+    </section>
+    </div><div>
+     <section class="new-section">
+      <h1>To-Do List</h1>
+      <input type="text" class="new-input"></input>
+      <button class="new-btn">Make It A Task!</button>
+    </section>
+</div>
+</div>
+
+<h1 class= "note">Sample Trackers</h1>
+
+<div>
+<div>
+<table style="width:80%">
+  <tr>
+    <th>Day #</th>
+    <th><input type= "text" class= "hola"></input> of<input type= "text" class= "hola"></input></th>
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>28</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  
+    <td>29</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  
+    <td>30</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+</table>
+</div>
+
+
+
+  <div>
+  <table style="width:80%", padding-bottom: 30px;>
+  <tr>
+    <th>Night #</th>
+   <th><input type= "text" class= "hola"></input> of<input type= "text" class= "hola"></input></th>
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  <tr>
+    <td>28</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  
+    <td>29</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+  
+    <td>30</td>
+    <td><input type= "text"> </td>
+    
+  </tr>
+</table>
+
+</div>
+</div>
+
+
+
+<a href= "game.html" class="games">Need a Break? Click to Play a Fun Game!</a>
+
+
+  </body>
+</html>
