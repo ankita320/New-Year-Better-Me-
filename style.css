@@ -1,0 +1,187 @@
+# New-Year-New-Me-
+Use this website as a way to keep yourself productive and organized!
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.to-do-list,
+ {
+  margin: 20px;
+  border: 2px solid #4A37E7;
+  border-style: dotted;
+  border-width: 6px;
+  border-radius: 7px;
+  padding: 15px;
+  width: 50%;
+}
+
+.notes, .new-section {
+margin: 20px;
+  border: 2px solid;
+  border-color: #f09bb4;
+  border-style:double;
+  border-width: 6px;
+  border-radius: 7px;
+  
+  padding: 15px;
+ width: 100%;
+ padding-right: 10px;
+   font-family: 'IBM Plex Serif', serif;
+   font-size: 20px;
+   color: rgb(139, 0, 86);
+}
+
+.notes {
+  border-color: rgb(231, 151, 171);
+}
+.note {
+     font-family: 'IBM Plex Serif', serif;
+      color: rgb(139, 0, 86);
+
+}
+
+h1, p {
+  padding-bottom: 5px;
+}
+
+ .ok {
+   color: #c4416c;
+
+   display:inline;
+   width: 40%;
+   
+ }
+ div {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   padding-bottom: 20px;
+ }
+
+.red{
+  background-color: red;
+}
+
+.new {
+  margin-left: 340px;
+  border: 2px solid rgb(238, 110, 148);
+  border-style: dotted;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+
+  border-width: 6px;
+  border-spacing: 60px;
+  border-radius: 7px;
+  padding: 15px;
+  width: 50%;
+  font-size: 70px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(248, 211, 47), 0 0 20px #fff, 0 0 30px #fde36f, 0 0 40px #eaf82c, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fffc4d, 0 0 40px #ffde4d, 0 0 50px #fff34d, 0 0 60px #fff67f, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+}
+
+body {
+  background-color: rgb(255, 233, 233);
+}
+
+.submit-btn, .new-btn {
+  color:#f3e1d3;
+  background-color: #e60073;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+  input { 
+    font-size: 18px;
+    background-color:rgb(253, 219, 233);
+    border-color:#f09bb4;
+  }
+
+  .delete-btn {
+    color:#c4416c;
+  background-color: #f7cccb;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+  .dell{
+   
+   display: flex;
+    
+  }
+
+  table, th, td {
+  border: 1px solid rgb(116, 30, 80);
+}
+
+.hola {
+  font-size: 18px;
+  width: 70px;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.mg {
+  font-family: 'IBM Plex Serif', serif;
+      color: rgb(139, 0, 86);
+      padding-top: 10px;
+      background-color: pink;
+      border-style:double;
+      border-width: 10px;
+      border-color:#f09bb4;
+      padding-left:500px;
+}
+
+#quoteDisplay {
+  font-family: 'Ribeye Marrow', cursive;
+  font-size: 40px;
+  
+}
+
+.games {
+  background-color:#f7cccb;
+  font-family:'IBM Plex Serif', serif;
+     color: rgb(139, 0, 86);
+     text-decoration-style: none;
+     font-size: 30px;
+     border-style: double;
+     border-width: 10px;
+     border-color: #d1749b;
+     text-decoration-line: none;
+     padding-left:384px;
+     padding-right: 384px;
+}
+
+#acc {
+    background-color:#f7cccb;
+  font-family:'IBM Plex Serif', serif;
+     color: rgb(139, 0, 86);
+     text-decoration-style: none;
+     font-size: 30px;
+     border-style: double;
+     border-width: 10px;
+     border-color: #d1749b;
+     text-decoration-line: none;
+     padding-left:384px;
+     padding-right: 384px;
+}
